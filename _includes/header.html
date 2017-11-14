@@ -1,0 +1,36 @@
+<!--  Main menu with stick-on-top feature          -->
+    <div class="mainMenuContainer">
+        <section class="mainMenuBar menuFix initNotFixed">
+            <div class="mainMenuWrapper">
+                <div class="mainMenu">
+                    <div class="logoColor-mobile">
+                        <img src="images/logoColor.png">
+                    </div>
+                    <div class="logoColor">
+                        <img src="images/logoColor.png">
+                    </div>
+                    <div class="page-header__nav-wrapper">
+                        <div class="siteMenu page-header__nav-items">
+
+                            {% for my_page in site.pages %}
+                              {% if my_page.title %}
+                                  <a class="pricing" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+                              {% endif %}
+                            {% endfor %}
+
+                        </div>
+                        <div class="signUpMenu page-header__nav-items">
+                            <a class="logIn" href="https://visyond.com/site/login/">Log In</a>
+                            <a class="signUp" href="https://visyond.com/site/signup/">SIGN UP</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navigation-mobile__burger js-mobile-nav">
+                <a href="#" class="navigation-mobile__link">
+                    <span class="navigation-mobile__link-txt">Menu</span>
+                </a>
+            </div>
+        </section>
+    </div>
+

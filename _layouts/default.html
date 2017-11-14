@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <!-- <base href="https://cdn.visyond.com/homepage/"> -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-2.2.4.js"></script>
+    <script src="bootstrap-3.3.2-dist/js/bootstrap.js"></script>
+    <link rel="icon" href="https://visyond.com/f/img/visy-favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="https://visyond.com/f/img/visy-favicon.ico">
+    <style>
+        .hoverCover {
+            visibility: visible !important;
+        }
+        .visyondPlans .visyondPlansWrapper .infinitePlan:hover .planButton, .visyondPlans .visyondPlansWrapper .edgePlan:hover .planButton {
+            color: white !important;
+        }
+        .aPlan {
+            border: 1px solid #E4E4F1;
+            border-radius: 5px;
+        }
+        .aPlan .planHeader {
+            width: auto !important;
+        }
+        .blogPhoto:hover,
+        .planButton:hover {
+            cursor: pointer;
+        }
+        .talk .author b {
+            font-weight: bold !important;
+        }
+    </style>
+    {% include head.html %}
+</head>
+
+<body class="body-menu-top-none">
+   
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    <script src="js/pageEngine.js"></script>
+</body>
+
+</html>
